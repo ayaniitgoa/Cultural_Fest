@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="CSS/rocket.css" />
+<link rel="stylesheet" href="CSS/nav.css" />
+<link rel="stylesheet" href="CSS/page1.css" />
+<link rel="stylesheet" href="CSS/page2.css" />
+<link rel="stylesheet" href="CSS/page3.css" />
+<link rel="stylesheet" href="CSS/page4.css" />
+<link rel="stylesheet" href="CSS/page5.css" />
+<link rel="stylesheet" href="CSS/stars.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="CSS/scroll.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+<title>Cultrang - IIT Goa</title>
+</head>
+
+<body>
+
+  <div class="small-screen">
+      <div class="msg">We DoNot support smaller screens, Please change your device</div>
+  </div>
+
+    <div class="rocket" id="rocket">
+        <div class="wrapper">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <div class="rockettext">Click the Rocket to Enter</div>
+        <div class="stars-left">
+          <img src="./icons/stars.png" alt="stars" class="stars-left-img">
+        </div>
+        <div class="stars-right">
+          <img src="./icons/stars.png" alt="stars" class="stars-right-img">
+        </div>
+        <div class="dash-line-one">
+          <img src="./icons/dash.png" alt="dashline" class="dash-line-img-one">       
+        </div>
+        <div class="dash-line-two">
+          <img src="./icons/dash.png" alt="dashline" class="dash-line-img-two">
+        </div>
+        <div class="dash-line-three">
+          <img src="./icons/dash.png" alt="dashline" class="dash-line-img-three">
+        </div>
+        <div class="dash-line-three">
+          <img src="./icons/dash.png" alt="dashline" class="dash-line-img-three">
+        </div>
+        <div class="dash-line-four">
+          <img src="./icons/dash.png" alt="dashline" class="dash-line-img-four">
+        </div>
+
+      <a class="rocketimg" href="#home" onclick="moveFunction()">
+        <img
+          src="./icons/rocket.png"
+          alt="rocket"
+          class="rocketimg"
+          id="rocketimg"
+          onclick="myFunction()"
+        />
+      </a>
+    </div>
+
+    <!-- Navbar -->
+
+<div class="sidenav">
+        <div id="nav2" class="Navicon2">
+          <span id="navicon2" onclick="closeNav()">
+            <img class="navimg" src="./icons/nav2.png">
+          </span>
+        </div>   
+        <ul id="mynav">
+          <li data-menuanchor="home"><a href="#home" id="c1" class="circle1" onclick="closeNav()"><p>HOME</p>
+          </a></li>
+          <li data-menuanchor="about"><a href="#about" id="c2" class="circle2" onclick="closeNav()"><p>ABOUT</p>
+          </a></li>
+          <li data-menuanchor="events"><a href="#events" id="c3" class="circle3" onclick="closeNav()"><p>EVENT</p>
+          </a></li>
+          <li data-menuanchor="sponser"><a href="#sponser" id="c4" class="circle4" onclick="closeNav()"><p>SPONSORS</p>
+          </a></li>
+          <li data-menuanchor="contact"><a href="#contact" id="c5" class="circle5" onclick="closeNav()"><p>CONTACT</p>
+          </a></li>
+        </ul>    
+    </div>
+
+    <div id="nav" class="Navicon">
+        <span id="navicon" onclick="openNav()">
+          <img class="navimg" src="./icons/nav1.png">
+        </span>
+    </div>     
+
+<div id="fp-wrapper">
+  <div class="section" id="page1" >
+    <div >
+
+          <div class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+        
+        <div class="logos">             
+              <a href="https://www.iitgoa.ac.in" target="blank" class="iit" ><img class="iitgoalogo" src="./icons/iitgoa-logo.png" alt="iitgoa-logo" /> </a>            
+              <img class="ebsblogo" src="./icons/LOGO-EBSB.png" alt="ebsb-logo" />
+        </div>
+
+          <div class="cult-logo" id="cult-logo">
+            <img class="Cultrang-logo" id="Cultrang-logo" src="./icons/cultrang-white.png" alt="Cultrang logo">
+          </div>
+
+          <div class="earth">
+            <img class="half-earth" src="./icons/fullearth.png" alt="earth" />
+            <a href="./Rulebook.pdf" target="blank" class="rulebookpdf">
+              <p>Rulebook</p>
+                <img class="download-button" src="./icons/download.png" alt="download"/>
+                </a>
+          </div>
+
+          <div>
+            <a href="https://forms.gle/J3JQHT45z4nxpnAcA" target="blank" class="registerbutton"><button id="registerbutton">Register</button></a>
+          </div>
+      </div>
+  </div>
+
+  <div class="section" id="page2">
+         <div class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+
+          <div class="layer">
+                <a href="#home" class="top-left"><img  class="top-logo" src="./icons/cultrang-white.png" alt="logo"></a>      
+                
+                <h1 id="about-heading">ABOUT</h1>
+                
+                <div class="layer1">       
+                    <img class="half-earth-down" src="./icons/fullearth.png" alt="earth" />
+                </div>
+              
+                <div class="layer2">
+                    <p id="about-content">
+                        IIT Goa, into its only 4th year of existence has already grown to be a much sought-after institution for engineering students and a melting-pot of ideas. Being young comes with its own unique brand of enthusiasm and ingenuity.
+
+                    </p>
+                    <p id="about-content">                        
+                      We are nestled into the vast and beautiful expanse of GEC campus in Farmagudi, Goa with a vibrant population of over three thousand students and five hundred faculty members and staff.
+                    </p>
+                    <p id="about-content">
+                      While we strive to achieve excellence in academic and technical endeavors, we are certainly touched by the rich culture of Goa which we want to celebrate through the first ever techno-cultural fest of IIT Goa - CultRang
+                    </p>
+                </div>
+            
+                <div class="layer3">
+                    <img class="mars-top-half" src="./icons/mars-half.png" alt="mars" style="bottom:0">        
+                    <img class="moon-rover-image" src="./icons/021-moon-rover.png" alt="moon-rover" />
+                    <img class="satellite-img" src="./icons/019-satellite.png" alt="Satellite" />            
+                </div> 
+            </div>
+   </div>
+
+  <div class="section" id="page3">
+      <div class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div> 
+
+            <a href="#home" class="top-left"><img  class="top-logo" src="./icons/cultrang-white.png" alt="logo"></a>
+           
+                <div class="event-mobileview">
+                    <img src="./icons/alien.png" id="left-alien1" class="left-alien1">
+                    <img src="./icons/alien.png" id="right-alien1" class="right-alien1">
+                    <div class="mobile-heading" id="mobile-heading">EVENTS</div>
+                    <div class="subheadingt" id="subheadingt">Technical</div>
+                    <div class="subheadingc" id="subheadingc">Cultural</div>
+                    <div class="tech-cult-heading" id="tech-cult-heading">
+                        <div class="tech-heading" onclick="showtechevents()"><p>Technical</p></div>
+                        <div class="cult-heading" onclick="showcultevents()"><p>Cultural</p></div>
+                    </div>
+                    <img src="./icons/back.png" class="back" id="back" onclick="hideevents()">
+                    <div class="techeventslist" id="techeventslist">
+                        <div class="tevent" id="tevent1"  onclick="showtevent(1)">Robbo Soccer</div>
+                        <div class="tevent" id="tevent2" onclick="showtevent(2)">Race it out</div>
+                        <div class="tevent" id="tevent3" onclick="showtevent(3)">Line follower</div>
+                        <div class="tevent" id="tevent4" onclick="showtevent(4)">Triathlon</div>
+                        <div class="tevent" id="tevent5" onclick="showtevent(5)">AI Gaming</div>
+                        <div class="tevent" id="tevent6" onclick="showtevent(6)">Chaos</div>
+
+                    </div>
+                    <div class="tdata" id="tdata1">
+                        <p class="ttext" id="ttext1">The objective is to design a manual robot and which can compete on an arena specially designed for robotic soccer match. The event is aimed at testing the Flipping, Kicking, maneuvering skills and the control of the robot
+                        </p>
+                    </div>
+                    <div class="tdata" id="tdata2">
+                        <p class="ttext">Program a 
+                        remote controlled electric car  to complete the given track filled with hurdles like zig zag, fidgrt spinner, bumpy bump, draw bridge, etc. in the shortest possible time. Can you do it?</p>
+                    </div>
+                    <div class="tdata" id="tdata3">
+                        <p class="ttext">The challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The participants must create an autonomous vehicle (hereafter ROBOT), that will move on the COMPETITION FIELD and do certain tasks.</p>
+                    </div>
+                    <div class="tdata" id="tdata4">
+                        <p class="ttext">A unique race of brains presented to you as a triathlon which will put your geeky skills to the real test. Do you have what it takes ?</p>
+                    </div>
+                    <div class="tdata" id="tdata5">
+                        <p class="ttext">The third world war will not be fought between humans but between the technologies of the superpowers of the world. Wanna experience how it feels to see artificial intelligence compete against each other, then join this AI Gaming event. Write the code for your bot and fight against other bots to see who emerges at the top and wins the war.All you need is a little bit of Python knowledge.</p>
+                    </div>
+                    <div class="tdata" id="tdata6">
+                        <p class="ttext">A market simulation game that generates enthusiasm in economics and gives practical examples of trading goods and services.
+                        </p>
+                    </div>
+                    
+                    <div class="hidedata" onclick="hidetevent(1)"></div>
+                    <div class="hidedata" onclick="hidetevent(2)"></div>
+                    <div class="hidedata" onclick="hidetevent(3)"></div>
+                    <div class="hidedata" onclick="hidetevent(4)"></div>
+                    <div class="hidedata" onclick="hidetevent(5)"></div>
+                    <div class="hidedata" onclick="hidetevent(6)"></div>
+                    
+                
+
+                    <div class="culteventslist" id="culteventslist">
+                        <div class="cevent" id="cevent1"  onclick="showcevent(1)">Tamasha</div>
+                        <div class="cevent" id="cevent2"  onclick="showcevent(2)">Know It All</div>
+                        <div class="cevent" id="cevent3"  onclick="showcevent(3)">Cascading Amps</div>
+                        <div class="cevent" id="cevent4"  onclick="showcevent(4)">Battle of feets</div>
+                        <div class="cevent" id="cevent5"  onclick="showcevent(5)">Groove It</div>
+                        <div class="cevent" id="cevent6"  onclick="showcevent(6)">Lafz</div>
+                        <div class="cevent" id="cevent7"  onclick="showcevent(7)">Bellas Artes</div>
+                        <div class="more" id="next" onclick="shownextcevent()">Next Page</div>
+                    </div>
+                    <div class="culteventslist2" id="culteventslist2">
+                        <div class="cevent" id="cevent8"  onclick="showcevent2(1)">Symphony</div>
+                        <div class="cevent" id="cevent9"  onclick="showcevent2(2)">Debate</div>
+                        <div class="cevent" id="cevent10"  onclick="showcevent2(3)">Literary</div>
+                        <div class="cevent" id="cevent11"  onclick="showcevent2(4)">Capture It</div>
+                        <div class="cevent" id="cevent12"  onclick="showcevent2(5)">Behind the scenes</div>
+                        <div class="cevent" id="cevent13"  onclick="showcevent2(6)">Film Wars</div>
+                        <div class="cevent" id="cevent14"  onclick="showcevent2(7)">Designer Hunt</div>
+                        <div class="more" id="prev" onclick="showprevcevent()">Prev Page</div>
+                    </div>
+                    <div class="cdata" id="cdata1">
+                        <p class="ctext" id="ctext1">Who needs a stage when you can perform on the streets? Street plays are a powerful means to create awareness and bring about a change in society. Connect with common man by enthralling the crowd with your performance, bring the Dramebaaz inside you at the Cult Rang’s street play - Tamasha <br> Be the change you want to see!
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata2">
+                        <p class="ctext" id="ctext2">Are you generally the walking encyclopedia of your gang or does information unintentionally come blurting out every time you open your mouth? <br> Well, if that’s the case, get ready to put your knowledge of the world to the test in the bustling atmosphere of the Cult Rang’s quiz competition – Know It All <br>Be there to fight it out at the pop-culture and general quizzes.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata3">
+                        <p class="ctext" id="ctext3">Transfix the crowd with an energetic performance with music booming in their ears long after you stop entertaining and the show ends! Get your vocal chords and your band ready for a mesmerizing musical night because, without music, life would be a mistake! <br>See you at Cult Rang’s band competition Cascadic Amps.t
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata4">
+                        <p class="ctext" id="ctext4">They say dance is the hidden language of the soul. So, dance it out like nobody is watching and set the streets ablaze! Bring your best moves and all the attitude you’ve got for the street battle. The crowd is waiting to be wowed! Dance it out at the Battle of the feets
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata5">
+                        <p class="ctext" id="ctext5">Think you got the moves?! Well guess what, we have the platform! Get your gang together, practice like you’ve never won and perform like you’ve never lost! Come, scale up the temperature, set the stage on fire and get the crowd grooving. We’ll be waiting to see you at the Cult Rang group dance event – Groove It Take more chances, Dance more dances!
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata6">
+                        <p class="ctext" id="ctext1">Cultrang's poetry competition Lafz is here to mesmerize you with poetry that expresses more than ordinary sentences ever could.
+                        <br>Don't miss out on this opportunity to get attractive prizes if you think you have a knack for poetry.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata7">
+                        <p class="ctext" id="ctext1">Ever been caught for humming inside the classroom? Ever lost yourself singing while taking a shower?<br>Here comes a platform where you can sing your heart and soul aloud.<br>We invite you to participate in the solo-duo singing competition at CultRang.
+                        </p>
+                    </div>
+
+                    <div class="cdata" id="cdata8">
+                        <p class="ctext" id="ctext1">Ever been caught for humming inside the classroom? Ever lost yourself singing while taking a shower?
+                        <br>Here comes a platform where you can sing your heart and soul aloud.<br>
+                        We invite you to participate in the solo singing competition at CultRang.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata9">
+                        <p class="ctext" id="ctext1">For those who don't merely speak but, assert For those who don't just carry an opinion but, stamp it For those who don't just have a say but, deliver the verdict. If you have the gift of the gab, we present before you a stage and a worthy opponent.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata10">
+                        <p class="ctext" id="ctext1">If creativity for you is integral to your existence. If words for you are an expression of your soul. If the pen is a gateway to your imagination. And if your hand-crafted fantasies mesmerize all and sundry, then creative writing at Cultrang is for you.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata11">
+                        <p class="ctext" id="ctext1">Bring out your DSLRs and turn on the professional mode for CultRang's photography event Capture It.
+                        <br>Be at the right place at the right time and when you find that perfect moment just capture it.
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata12">
+                        <p class="ctext" id="ctext1">“If it can be written or thought, it can be filmed.”<br> 
+                        Time to unleash the actor/director/screenplay writer in you in the CultRang's 40 hours Film Making competition - Behind the Scenes
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata13">
+                        <p class="ctext" id="ctext1">“You shouldn't dream your film, you should make it!” - Steven Spielberg<br> We live in a box of space and time. Movies are windows in its walls. They allow us to enter other minds, not simply in the sense of identifying with the characters, although that is an important part of it, but by seeing the world as another person sees it.  Do you often find yourself immersed in this world? If Yes? Then participate in this competition.<br> Theme: Justice
+                        </p>
+                    </div>
+                    <div class="cdata" id="cdata14">
+                        <p class="ctext" id="ctext1">It is time to buckle up and exercise your minds, to give the best you can.<br>
+                          Leaving the doors to creativity open, we invite all the illustrators & graphic designers to this poster making competition.<br> Theme: Break The Stigma
+                        </p>
+                    </div>
+
+                    <div class="hidedatac" onclick="hidecevent(1)"></div>
+                    <div class="hidedatac" onclick="hidecevent(2)"></div>
+                    <div class="hidedatac" onclick="hidecevent(3)"></div>
+                    <div class="hidedatac" onclick="hidecevent(4)"></div>
+                    <div class="hidedatac" onclick="hidecevent(5)"></div>
+                    <div class="hidedatac" onclick="hidecevent(6)"></div>
+                    <div class="hidedatac" onclick="hidecevent(7)"></div>
+
+                    <div class="hidedatac" onclick="hidecevent2(1)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(2)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(3)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(4)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(5)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(6)"></div>
+                    <div class="hidedatac" onclick="hidecevent2(7)"></div>
+                </div>
+
+                <div class="event-desktopview">
+                    <div class="Event-container">
+                        <div>
+                            <h1 id="main-page-event-heading">EVENTS</h1>
+                        </div>
+
+                        <div class="writing-container">
+                            <p></p>
+                        </div>
+                        <div class="both-container">
+                            <div class="card-tech-cult">
+                                <img src="./images/event-logos/tech.png">
+                                <h3>Technical</h3>
+                            </div>
+                            <div class="card-tech-cult">
+                                <img src="./images/event-logos/cult.png">
+                                <h3>Cultural</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                        <img src="./icons/alien.png" id="left-alien" class="left-alien">
+                        <img src="./icons/alien.png" id="right-alien" class="right-alien">
+                    <!-- techcode begins from here -->
+                    <div class="Event-container" style="display: none;">
+                        <h1 class="event-heading">Technical</h1>                     
+                            <div class="left-back-button-desktop ">Back</span>
+                            </div>  
+
+                        <div class="pack_of_card " style="margin-left: 12vw;">
+                            <div class="event-card">
+                                <img src="./images/event-logos/robo.png" alt="event1">
+                                <p>Robbo Soccer</p>
+                            </div>
+                            <div class="event-card">
+                                <img src="./images/event-logos/car-race.png" alt="event2">
+                                <p>Race it out</p>
+                            </div>
+                            <div class="event-card">
+                                <img src="./images/event-logos/line-follower.png" alt="event4">
+                                <p>Line follower</p>
+                            </div>
+                            <div class="event-card">
+                                <img src="./images/event-logos/hackathon.png" alt="event4">
+                                <p>Triathlon</p>
+                            </div>
+                        </div>
+                        <div class="pack_of_card2" >
+                            <div class="event-card">
+                                <img src="./images/event-logos/ai.png" alt="event5">
+                                <p>AI Gaming</p>
+                            </div>
+                            <div class="event-card">
+                                <img src="./images/event-logos/chaos.png" alt="event6">
+                                <p>Chaos</p>
+                            </div>
+                   
+                        </div>
+
+                    </div>
+                    <!-- event-page in desktop view -->
+                    <div class="Event-container" style="display: none;">
+                        <h1 class="event-heading">Cultural</h1>
+                            <div class="left-back-button-desktop ">Back
+                            </div>
+                        <div class="pack_of_card3" style="margin-left: 12vw;">
+                            <div class="event-card2">
+                                <img src="./images/event-logos/drama.png" alt="event1">
+                                <p>Tamasha</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/quiz.png" alt="event2">
+                                <p>Know It All</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/cascading-amp.png" alt="event3">
+                                <p>Cascading Amps</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/dance.png" alt="event3">
+                                <p>Battle of feets</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/grooveit.png" alt="event4">
+                                <p>Groove it</p>
+                            </div>
+                        </div>
+                        <div class="pack_of_card4" >
+
+                            <div class="event-card2">
+                                <img src="./images/event-logos/poetry.png" alt="event5">
+                                <p>Lafz</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/fine-arts.png" alt="event6">
+                                <p>Bellas Artes</p>
+                            </div>  
+                             <div class="event-card2">
+                                <img src="./images/event-logos/music.png" alt="event6">
+                                <p>Symphony</p>
+                            </div>
+                             <div class="event-card2">
+                                <img src="./images/event-logos/debate.png" alt="event6">
+                                <p>Debate</p>
+                            </div>
+                             <div class="event-card2">
+                                <img src="./images/event-logos/literary.png" alt="event6">
+                                <p>Literary</p>
+                            </div>                          
+                        </div>
+                        <div class="pack_of_card4" >
+                            
+                            <div class="event-card2">
+                                <img src="./images/event-logos/camera.png" alt="event4">
+                                <p>Capture It</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/film.png" alt="event5">
+                                <p>Behind the Scenes</p>
+                            </div>
+                            <div class="event-card2">
+                                <img src="./images/event-logos/filmwar.png" alt="event6">
+                                <p>Film wars</p>
+                            </div> 
+                            <div class="event-card2">
+                                <img src="./images/event-logos/design.png" alt="event6">
+                                <p>Designer Hunt</p>
+                            </div>                            
+                        </div>
+
+                    </div>
+                    <div class="Event-container" style="display: none;">
+                        <h1 class="event-heading">Tech</h1>
+                        <div class="upper-part">
+
+                            <div class="left_back_button">
+                                Back
+                            </div>
+                            
+                        </div>
+                        <div class="lower-part">
+                            <div class="event-name">
+                                <p id="festtype">Event Name</p>
+                            </div>
+                            <div class="sub-lower-part">
+                                <div class="event-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aut officia maiores velit distinctio sequi deserunt ad reprehenderit, sed architecto explicabo at ea libero maxime. Saepe doloribus enim voluptas atque!
+                                </div>
+                                <div class="poster">
+                                    <img class="poster-img" src="./images/robosoccer.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+  </div>
+
+  <div class="section" id="page4">
+       <div class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+            <a href="#home" class="top-left"><img  class="top-logo" src="./icons/cultrang-white.png" alt="logo"></a>
+            <h1 class="sponser-heading">OUR SPONSORS</h1>
+            <p class="sponser-content">COMING SOON</p>
+  </div>  
+
+  <div class="section" id="page5">
+    <!-- <div class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div> -->
+    <a href="#home" class="top-left"><img  class="top-logo" src="./icons/cultrang-white.png" alt="logo"></a>
+
+    <section class="desktop">
+    <div class="heading"><h1>CONTACT US</h1></div>
+    <div class="bar">
+      <div class="socialmedia">
+        <a class="insta" target="blank" href="https://www.instagram.com/cultrangiitgoa"><img src="./icons/instagram-brands.svg" alt=""></a>
+        <a class="facebook" target="blank" href="https://www.facebook.com/cultrangiitgoa"><img src="./icons/facebook-square-brands.svg" alt=""></a>
+        <a class="twitter" target="blank" href="https://www.twitter.com/CultRangIITGoa"><img src="./icons/twitter-square-brands.svg" alt=""></a>
+        <a class="youtube" target="blank" href="https://www.youtube.com/channel/UCqYipWMIitV14nR9KyZjgeQ"><img src="./icons/youtube-brands.svg" alt=""></a>
+      </div>
+      <div class="pic1">
+          <img src="./icons/astronaut.png" alt="" />
+      </div>
+      <div class="pic2">
+          <img src="./icons/antenna.png" alt="" />
+      </div>
+    </div>
+
+
+    <div>
+        <div class="threecards">
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Overall Coordinator</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/abhay.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Abhay Kajaniya
+                            <br>
+                           
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                            </p>
+                            <div class="contact1" >&#9743; +91 7830252199<br>
+                            
+                            &#9993 abhay.kajaniya.16003<br>@iitgoa.ac.in</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Sponsor Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/harsil.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                       
+                        <p>Harsil Choudhary
+                            <br>
+                            
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                            </p>
+                            <div class="contact1" >&#9743; +91 7830252199<br>
+                            &#9993 harsil.chodhary.17002<br>@iitgoa.ac.in</div>
+                    </div>
+     
+                </div>
+            </div>
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Public Relation Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/mc.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Mahipal Singh Rathore
+                            <br>
+                            
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                           </p>
+                            <div class="contact1" >&#9743; +91 9079797429<br>
+                            
+                            &#9993 mahipal.rathore.17003<br>@iitgoa.ac.in</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="threecards">
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Event Manager</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/jatin.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Jatin Johri
+                            <br>
+                            
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                            </p>
+                            <div class="contact1" >&#9743; +91 8859690970<br>
+                            &#9993 jatin.johri.16003<br>@iitgoa.ac.in</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Technical Events Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/pranav.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Pranav Yeola
+                            <br>
+                          
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                            </p>
+                            <div class="contact1" >&#9743; +91 9371617987<br>
+                            &#9993 stab@iitgoa.ac.in</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Finance Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/gaurav.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                    
+                        <p>Gaurav Aidasani
+                            <br>
+                            
+                        </p>
+                        <p style="text-align: left">
+                            &nbsp Contact:
+                            <br></p>
+                            <div class="contact1"  >&#9743; +91 9987500889<br>
+                            &#9993 gaurav.aidasani.16001<br>@iitgoa.ac.in</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+        </section>
+        <section class="mobile">
+           <div class="heading"><h1>CONTACT</h1></div>
+          
+              <div class="bar">
+                <div class="socialmedia">
+                  <a class="insta" target="blank" href="https://www.instagram.com/cultrangiitgoa"><img src="./icons/instagram-brands.svg" alt=""></a>
+                  <a class="facebook" target="blank" href="https://www.facebook.com/cultrangiitgoa"><img src="./icons/facebook-square-brands.svg" alt=""></a>
+                  <a class="twitter" target="blank" href="https://www.twitter.com/CultRangIITGoa"><img src="./icons/twitter-square-brands.svg" alt=""></a>
+                  <a class="youtube" target="blank" href="https://www.youtube.com/channel/UCqYipWMIitV14nR9KyZjgeQ"><img src="./icons/youtube-brands.svg" alt=""></a>
+                </div>
+                <div class="pic1">
+                  <img src="./icons/astronaut.png" alt="" />
+                </div>
+                <div class="pic2">
+                  <img src="./icons/antenna.png" alt="" />
+                </div>
+              </div>
+
+              <div>
+        <div class="threecards">
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Overall Coordinator</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/abhay.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Abhay Kajaniya</p>
+                        <div class="contact1" >&#9743; +91 7830252199<br>    
+                        &#9993 abhay.kajaniya.16003<br>@iitgoa.ac.in</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Sponsor Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/harsil.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                       
+                        <p>Harsil Choudhary</p>
+                        
+                            <div class="contact1" >&#9743; +91 7830252199<br>
+                            &#9993 harsil.chodhary.17002<br>@iitgoa.ac.in</div>
+                    </div>
+     
+                </div>
+            </div>
+            <div class="flip-card ">
+              <div class="cardname">
+                  <p>Public Relation Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/mc.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Mahipal Singh Rathore</p>
+                        
+                            <div class="contact1" >&#9743; +91 9079797429<br>
+                            
+                            &#9993 mahipal.rathore.17003<br>@iitgoa.ac.in</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="threecards">
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Event Manager</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/jatin.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Jatin Johri</p>
+                        <div class="contact1" >&#9743; +91 8859690970<br>
+                            &#9993 jatin.johri.16003<br>@iitgoa.ac.in</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Technical Events Head</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/pranav.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Pranav Yeola
+                        </p>
+                      
+                            <div class="contact1" >&#9743; +91 9371617987<br>
+                            &#9993 stab@iitgoa.ac.in</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card card-secondcol">
+              <div class="cardname">
+                  <p>Finance Manager</p>
+              </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/gaurav.jpg" alt="Avatar" class="contactimg" />
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Gaurav Aidasani
+                        </p>
+                      
+                            <div class="contact1" >&#9743; +919987500889<br>
+                            &#9993 gaurav.aidasani.16001<br>@iitgoa.ac.in</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+        </section>
+    </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.js'></script><script  src="./Javascript/script.js"></script>
+    <!-- Scripts of Scrolling -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+    <!-- Scripts of Navbar -->
+  <script src="Javascript/nav.js"></script>
+  <script src="Javascript/rocket.js"></script>
+  <script src="Javascript/event.js"></script>
+
+</body>
+</html>

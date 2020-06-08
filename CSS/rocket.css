@@ -1,0 +1,99 @@
+.small-screen{
+  height: 100vh !important;
+  width: 100vw !important;
+  position: fixed;
+  top: 0;
+  left:0;
+  font-size: 20px;
+  z-index: 99999999999999;
+  background-color: #1c253c;
+  text-align: center;
+  color: white;
+  display: none;
+}
+.msg{
+  position: absolute;
+  bottom: 5vh;
+}
+.rockettext{
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  color: white;
+  font-size: 5vh;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+.rocket {
+  height: 100vh;
+  width: 100vw;
+  background: #1c253c;
+  z-index: 999999;
+  transition: all 1.3s ease;
+  position: absolute;
+  z-index: 99;
+}
+.stars-left {
+  position: absolute;
+  left: 0;
+  transform: scaleX(-1);
+}
+.stars-left-img {
+  width: 20vw;
+}
+.stars-right-img {
+  width: 20vw;
+}
+.stars-right {
+  position: absolute;
+  right: 0;
+}
+.dash-line-one {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  top: 0;
+}
+.dash-line-two {
+  position: absolute;
+  left: 50%;
+  top: 26vh;
+  transform: translate(-50%);
+  z-index: 8;
+}
+.dash-line-three {
+  position: absolute;
+  left: 50%;
+  top: 52vh;
+  transform: translate(-50%);
+  z-index: 4;
+}
+.dash-line-four {
+  position: absolute;
+  left: 50%;
+  top: 66vh;
+  transform: translate(-50%);
+}
+
+.rocketimg {
+  width: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1.3s ease;
+  cursor: pointer;
+  z-index: 99;
+}
+@media screen and (max-width: 730px){
+  .stars-left,
+  .stars-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px){
+.small-screen{
+  display: block;
+}
+}

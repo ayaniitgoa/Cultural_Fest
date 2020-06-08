@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+.sponser-heading{
+	font-size: 10vh;
+	position: absolute;
+	top: 2vh;
+	left: 0;
+	margin:auto;
+	text-align: center;
+	width: 100vw;
+	color: white;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.sponser-content{
+	font-size: 4vw;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin:auto;
+	text-align: center;
+	width: 100vw;
+	color: white;
+}
+@media (max-width: 600px) {
+	.sponser-heading{
+		text-align: left;
+		font-size: 6vh;
+	}
+}

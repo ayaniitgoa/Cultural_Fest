@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
+.top-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    z-index: 3;
+}
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    cursor: pointer;
+    z-index: 5;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+}
+.layer1{
+    position: relative;
+    top:0;
+    height:10vh;
+}
+.layer2{
+    position: relative;
+    position:relative;
+    text-align:center;
+    display:inline-block;
+    margin-top: 2vh;
+    margin-left:5vw;
+    margin-right:5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: rgba(255,255,255,0.4);
+    z-index: 2;
+    border-radius: 25px;
+}
+.layer3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height:40vh;
+    width: 100vw;
+}
+.half-earth-down{
+    animation:spin 10s linear infinite;
+	position: absolute;
+	top: -40vh;
+	left: -40vh;
+    height: 80vh;  
+    z-index:2;
+}
+#about-heading{
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    width: 100vw;
+    font-size:10vh;
+    text-align: center;
+    z-index:999999999 !important;
+    font-family: 'Josefin Sans', sans-serif;  
+    letter-spacing: 3px;  
+    color: white; 
+}
+
+#about-content{
+    position :relative;
+    z-index:1;
+    color:black;
+    font-weight:normal;
+    font-size:3.5vh;
+    text-align: left;
+    word-wrap: none;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 4vw;
+    padding-right: 4vw; 
+    z-index: 2;      
+}
+.mars-top-half{   
+    position: absolute;
+    bottom: 0;
+    margin-bottom:0 !important;
+    width:100vw;
+    z-index: 1      
+}
+.satellite-img{
+    animation: MoveUpDown 5s linear infinite;
+    position: absolute;
+    right:5%;
+    height:150px;
+    width:150px;
+    bottom:20%; 
+    z-index: 3;
+}
+
+.moon-rover-image{
+    animation: Moveleftright  30s linear infinite;
+    position:absolute;
+    bottom : 0;
+    left:0;
+    height: 100px;
+    width: auto;
+    z-index: 1;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+}
+@keyframes Moveleftright {
+    0%, 100% {
+      left: 0;
+    }
+    50% {
+      left: 90%;
+    }
+}
+@media  (max-width:730px){
+    .half-earth-down{
+        height:60vh;
+        top:-30vh;
+        left:-30vh;
+    }
+    #about-heading{
+        font-size: 10vw;
+    }
+    #about-content{
+        font-size: 1rem;
+    }
+}
+@media (max-width:900px ) and (min-width:450px){
+    .satellite-img{
+        animation: MoveUpDown 5s linear infinite;
+        position: absolute;;
+        right:5%;
+        height:120px;
+        width:120px;
+        bottom:20%;        
+    }
+}
+@media (max-width:600px){
+    .satellite-img{
+        animation: MoveUpDown 5s linear infinite;
+        position: absolute;;
+        right:5%;
+        height:80px;
+        width:80px;
+        bottom:20%;        
+    }
+    .top-left{
+        display: none;
+    }
+    #about-heading{
+        text-align: left;
+        padding-left: 2vh;
+        font-size: 10vh;
+    }
+}
